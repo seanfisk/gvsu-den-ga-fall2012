@@ -1,0 +1,374 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\pdf_quoted_options "urlcolor=blue"
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+CIS Graduate Assistantship Proposal
+\end_layout
+
+\begin_layout Author
+Sean Fisk
+\end_layout
+
+\begin_layout Abstract
+The following is a proposal outline for graduate assistantship position
+ to improve facilities associated with the Distributed Execution Network
+ lab (aka.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+the DEN
+\begin_inset Quotes erd
+\end_inset
+
+), managed by Dr.
+ Greg Wolffe.
+\end_layout
+
+\begin_layout Section
+Revamped website
+\end_layout
+
+\begin_layout Subsection
+Summary
+\end_layout
+
+\begin_layout Standard
+Presently, the DEN website is not current in content nor style.
+ A saying among programmers is that an obsolete comment is worse than no
+ comment at all, and the same applies to our website.
+ With Dr.
+ Wolffe's help, I will provide current content for the site.
+ In addition, the styling for the DEN website is quite archaic.
+ As a function of the computer science department, the DEN should have a
+ website that is atractive and usable, and a shining example of a well-designed
+ site.
+ As part of the website update, the style of the site will be upgraded to
+ reflect current practices.
+ Possibly the most important reason to update the site is that former DEN
+ students have referenced the DEN on their resume and supplied the URL to
+ the DEN website.
+ Potential employers who have checked the website for mentioned projects
+ or papers have been surprised to find them missing.
+\end_layout
+
+\begin_layout Subsection
+Technical
+\end_layout
+
+\begin_layout Standard
+Currently, the web site exists as a static HTML web site.
+ Tentative plans are to port the website to a content management system
+ such as 
+\begin_inset CommandInset href
+LatexCommand href
+name "Django-cms"
+target "https://www.django-cms.org/"
+
+\end_inset
+
+ or 
+\begin_inset CommandInset href
+LatexCommand href
+name "Wordpress"
+target "http://wordpress.org/"
+
+\end_inset
+
+ or to use a static web site generator such as 
+\begin_inset CommandInset href
+LatexCommand href
+name "Octopress"
+target "http://octopress.org/"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Code repository
+\end_layout
+
+\begin_layout Subsection
+Summary
+\end_layout
+
+\begin_layout Standard
+Historically, DEN projects have been indivually managed.
+ This has had the effect that much of the source code and documentation
+ produced under DEN umbrella is scattered in various locations, and some
+ of it lost.
+ This is regrettable because it would be desirable for the lab to have a
+ list of past, present, and future projects in addition to their source
+ code.
+ This could serve as an internal record and also as a public resume of DEN
+ work.
+ In addition, as a lab which operates highly specialized equipment, having
+ sample code is always a plus.
+ Recently, I have been using and investigating a piece of project management
+ and code repository software named 
+\begin_inset CommandInset href
+LatexCommand href
+name "Allura"
+target "http://sf.net/p/allura"
+
+\end_inset
+
+.
+ Allura is the underlying software which powers 
+\begin_inset CommandInset href
+LatexCommand href
+name "Sourceforge"
+target "http://sourceforge.net/"
+
+\end_inset
+
+, and is also known as Sourceforge 2.0.
+ It has been released under the 
+\begin_inset CommandInset href
+LatexCommand href
+name "Apache License"
+target "http://www.apache.org/licenses/LICENSE-2.0"
+
+\end_inset
+
+ and so is free and open-source software.
+ I believe that Allura would be a perfect fit to manage new DEN projects
+ and archive old projects.
+ It would also force all DEN projects to use version control, which I believe
+ is a very good thing.
+ I have already discussed with Dr.
+ Wolffe and Mr.
+ Ira Woodring the possiblity of installing this software on a DEN machine.
+ Since the install of this software is non-trivial, I would expect that
+ working out the best solution for running it would take some time.
+ However, due to its advantages, it is definitely worth the effort.
+\end_layout
+
+\begin_layout Subsection
+Technical
+\end_layout
+
+\begin_layout Standard
+Current supported features include everything that is available to new Sourcefor
+ge projects, which includes:
+\end_layout
+
+\begin_layout Itemize
+issue tracker
+\end_layout
+
+\begin_layout Itemize
+forums
+\end_layout
+
+\begin_layout Itemize
+code repository - current supported version control systems are 
+\begin_inset CommandInset href
+LatexCommand href
+name "Subversion"
+target "http://subversion.apache.org/"
+
+\end_inset
+
+, 
+\begin_inset CommandInset href
+LatexCommand href
+name "Git"
+target "http://git-scm.com/"
+
+\end_inset
+
+, and 
+\begin_inset CommandInset href
+LatexCommand href
+name "Mercurial"
+target "http://mercurial.selenic.com/"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+wikis
+\end_layout
+
+\begin_layout Itemize
+downloads section
+\end_layout
+
+\begin_layout Itemize
+pastebin
+\end_layout
+
+\begin_layout Itemize
+per-project website hosting
+\end_layout
+
+\begin_layout Standard
+Allura is written in Python.
+ If we decide to use Django for the DEN website, the sites should integrate
+ very well.
+\end_layout
+
+\begin_layout Section
+Showcase project
+\end_layout
+
+\begin_layout Subsection
+Summary
+\end_layout
+
+\begin_layout Standard
+An important part of this graduate assistantship for me is increasing the
+ visibility of the DEN, both at Grand Valley and publicly.
+ One way of accomplishing this is by creating a piece of software that would
+ be useful to many people, especially those in academia.
+ In our CIS 678 Machine Learning course, I recently undertook a project
+ in which I implemented a CpG island finder using Hidden Markov Models.
+ Although there is an abundance of documentation explaining the CpG islands
+ problem, I was surprised by the lack of current software implementing the
+ solution, especially using the Hidden Markov Model approach.
+ For this project, I would like to develop a web-accessible CpG island finder
+ program.
+ Furthermore, the execution of Hidden Markov Models can be accelerated through
+ parallel processing.
+ I would like to implement my program such that it can take advantage of
+ the advanced graphics cards and multi-processor architectures present in
+ the DEN.
+ The program could be made available for running in-browser on the DEN website,
+ and the code could be hosted inside our DEN code repository.
+ The program and source code would serve as an example of the types of projects
+ that are undertaken in the DEN.
+\end_layout
+
+\begin_layout Subsection
+Technical
+\end_layout
+
+\begin_layout Standard
+The program would (most likely) be implemented in 
+\begin_inset CommandInset href
+LatexCommand href
+name "Python"
+target "http://python.org/"
+
+\end_inset
+
+ using 
+\begin_inset CommandInset href
+LatexCommand href
+name "OpenCL"
+target "http://www.khronos.org/opencl/"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset href
+LatexCommand href
+name "PyOpenCL"
+target "http://mathema.tician.de/software/pyopencl"
+
+\end_inset
+
+.
+ It would use the Hidden Markov Model approach to the CpG islands problem.
+\end_layout
+
+\begin_layout Section
+This document
+\end_layout
+
+\begin_layout Standard
+Code for this document is available at 
+\begin_inset CommandInset href
+LatexCommand href
+target "https://github.com/seanfisk/gvsu-den-ga-fall2012"
+
+\end_inset
+
+.
+ Created using 
+\begin_inset CommandInset href
+LatexCommand href
+name "LyX"
+target "http://www.lyx.org/"
+
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document
